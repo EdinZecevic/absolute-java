@@ -1,8 +1,8 @@
 package call;
 
 public class NationalCall {
-	private int SourcePhoneNumber;
-	private int DestinationPhoneNumber;
+	private long SourcePhoneNumber;
+	private long DestinationPhoneNumber;
 	private int DurationInSeconds;
 	private int DurationTotal;
 	private int PriceOfCall;
@@ -40,10 +40,10 @@ public class NationalCall {
 		return PriceOfAllCals;
 	}
 
-	public int getSourcePhoneNumber() {
+	public long getSourcePhoneNumber() {
 		return SourcePhoneNumber;
 	}
-	public int getDestinationPhoneNumber() {
+	public long getDestinationPhoneNumber() {
 		return DestinationPhoneNumber;
 	}
 	public int getDurationInSeconds() {
