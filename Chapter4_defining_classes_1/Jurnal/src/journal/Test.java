@@ -9,6 +9,6 @@ public class Test {
 		input.setYear(1995);
 		
 		String sinan=input.getDate();
-		System.out.println(sinan);
+		System.out.println(sinan);--
 }	
 }
