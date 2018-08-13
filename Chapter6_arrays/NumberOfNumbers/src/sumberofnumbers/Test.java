@@ -17,8 +17,8 @@ public class Test {
 		
 		NumberOfNumbers.sort(merged, merged.length);
 		
-		NumberOfNumbers.countNumbers(merged);33
-		
+		NumberOfNumbers.countNumbers(merged);
+
 		
 	}
 }
