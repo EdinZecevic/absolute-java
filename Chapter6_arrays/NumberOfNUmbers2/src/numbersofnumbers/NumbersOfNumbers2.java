@@ -26,8 +26,6 @@ public class NumbersOfNumbers2 {
 			
 			}
 	}
-	
-	
 	public static int indexOfSmallest(int [] merged, int startIndex, int mergedLength) {
 		double min =merged[startIndex];
 		int index;
