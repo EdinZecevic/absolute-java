@@ -33,7 +33,7 @@ public class NumbersOfNumbers2 {
 		int index;
 		int indexOfMin=startIndex;
 		for(index=startIndex+1; index<mergedLength;index++) 
-			if(merged[index]<min) {
+			if(merged[index]>min) {
 				min=merged[index];
 				indexOfMin=index;
 				}

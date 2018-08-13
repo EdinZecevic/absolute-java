@@ -9,8 +9,10 @@ public class Test {
 		NumbersOfNumbers2.setNumbers(array);
 		System.out.println("");
 		
-		NumbersOfNumbers2.countNumbers(array);
 		NumbersOfNumbers2.sort(array, array.length);
+		
+		NumbersOfNumbers2.countNumbers(array);
+	
 	}
 
 }
