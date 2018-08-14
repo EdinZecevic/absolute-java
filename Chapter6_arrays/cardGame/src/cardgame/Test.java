@@ -15,7 +15,7 @@ public class Test {
 		
 		input.setTableNumbers();
 		input.getIj();
-		}
-	}}
+		}**
+	}
 
 
