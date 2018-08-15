@@ -2,7 +2,7 @@ package message;
 
 public class SMS extends Message {
 	
-	public String recipientContact;
+	public static String recipientContact;
 	public int no;
 	
 	public SMS() {
@@ -39,7 +39,7 @@ public class SMS extends Message {
 	public int getNo() {
 		return no;
 	}
-	public String toString() {
-		return(super.toString()+" "+recipientContact+" "+no);
+	public  String toString() {
+		return(recipientContact+" "+no);
 	}
 }

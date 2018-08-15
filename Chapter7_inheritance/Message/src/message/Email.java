@@ -51,7 +51,7 @@ public class Email {
 	}
 	
 	public String toString() {
-		return (super.toString()+" "+sender+" "+reciver+" "+subject);
+		return (sender+" "+reciver+" "+subject);
 	}
 	
 }

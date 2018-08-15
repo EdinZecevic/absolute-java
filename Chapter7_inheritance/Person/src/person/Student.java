@@ -50,6 +50,6 @@ public class Student extends Person{
 	}
 	
 	public String displayDetails() {
-		return (super.displayDetails() + " "+id+" "+course+" "+teacherName);
+		return (id+" "+course+" "+teacherName);
 	}
 }

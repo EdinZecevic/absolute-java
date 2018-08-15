@@ -15,7 +15,7 @@ public class Test {
 		System.out.println(student.displayDetails());
 		System.out.println(student1.displayDetails());
 		System.out.println(teacher.displayDetails());
-		System.out.println(teacher1.displayDetails1());
+		System.out.println(teacher1.displayDetails());
 		
 		
 		

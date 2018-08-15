@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class AirplaineSeats {
 	static Scanner keyboard= new Scanner(System.in);
-	static String [][] a= new String[100][100];
+	static String [][] a= new String[1000][1000];
 	
 	public static void setTableNumbers() {
 		int i,j,s=0;
@@ -64,36 +64,37 @@ public class AirplaineSeats {
 		return a[i][j];	
 	}
 	
-	public static void returnTableNumbers(int k,int b) {
-		int i,j;
+	public static void returnTableNumbers(int [] k,int [] b) {
+		int i,j,m;
 		for(i=1; i<2;i++) {
+			for(m=0; m<1;m++) {
 			for(j=1; j<=7;j++) {
 				System.out.println("   ");
 				System.out.print(j);
 				
-				if(i==k && j==b) {
+				if(i==k[m] && j==b[m]) {
 					System.out.print("    ");
 				a[i][j]= "x";
 				System.out.print(a[i][j]);
 				}
-				else {
+				else  {
 					System.out.print("    ");
 					a[i][j]= "A";
 					System.out.print(a[i][j]);
 				}
 				i++;
-				if(i==k && j==b) {
+				if(i==k[m] && j==b[m]) {
 					System.out.print("    ");
 					a[i][j]= "x";
 					System.out.print(a[i][j]);
 					}
-					else {
+				else  {
 						System.out.print("    ");
 						a[i][j]= "B";
 						System.out.print(a[i][j]);
 					}
 				i++;
-				if(i==k && j==b) {
+				if(i==k[m] && j==b[m]) {
 					System.out.print("    ");
 					a[i][j]= "x";
 					System.out.print(a[i][j]);
@@ -104,7 +105,7 @@ public class AirplaineSeats {
 						System.out.print(a[i][j]);
 					}
 				i++;
-				if(i==k && j==b) {
+				if(i==k[m] && j==b[m]) {
 					System.out.print("    ");
 					a[i][j]= "x";
 					System.out.print(a[i][j]);
@@ -117,7 +118,7 @@ public class AirplaineSeats {
 			}
 			
 		}
-	
+		}
 	}
 
 }

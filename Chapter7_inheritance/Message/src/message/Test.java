@@ -8,8 +8,8 @@ public class Test {
 		
 		System.out.println(message);
 		System.out.println(sms);
-		System.out.println(email);
-		boolean mesage1 = message.ContainsKeyword(message, "Sunce");
-		System.out.println(mesage12);
+		System.out.println(email.toString());
+		boolean mesage1 = Message.ContainsKeyword(message, "Sunce");
+		System.out.println(mesage1);
 }
 }

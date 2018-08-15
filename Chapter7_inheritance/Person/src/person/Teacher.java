@@ -33,6 +33,6 @@ public class Teacher extends Person {
 		return salary;
 	}
 	public String displayDetails() {
-		return (super.displayDetails() +" "+subjectName+" "+salary);
+		return (subjectName+" "+salary);
 	}
 }
