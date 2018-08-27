@@ -15,7 +15,7 @@ public class FirstSwign {
 		//window.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);	//	if press X for close window will  disappear
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	//	if press X for close window will  exit
 		
-		window.setTitle("First winow");
+		window.setTitle("My first winow");
 		
 		JButton endButton = new JButton("Click to end thre program! ");
 		EndingListener button = new EndingListener();
