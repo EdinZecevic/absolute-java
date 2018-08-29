@@ -1,6 +1,5 @@
 package menu;
 import javax.swing.JFrame;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JPanel;
@@ -38,7 +37,7 @@ public class Menu extends JFrame implements ActionListener {
 		grayPanel.setBackground(Color.LIGHT_GRAY);
 		add(grayPanel);
 		
-		JMenu menu =new JMenu();
+		JMenu menu =new JMenu("Colours");
 		
 		JMenuItem blue=new JMenuItem("Blue");
 		blue.addActionListener(this);
