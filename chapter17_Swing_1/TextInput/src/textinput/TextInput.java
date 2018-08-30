@@ -1,17 +1,18 @@
 package textinput;
 
 import javax.swing.JFrame;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.BorderLayout;
-import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JButton;
-import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.FlowLayout;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+@SuppressWarnings("serial")
 public class TextInput extends JFrame implements ActionListener {
 	
 	public static final int width=500;
@@ -30,8 +31,8 @@ public class TextInput extends JFrame implements ActionListener {
 		panel.setBackground(Color.LIGHT_GRAY);
 		panel.setLayout(new BorderLayout());
 		
-		JTextField text=new JTextField(NUMBER_OF_CHARACTERS);
-		panel.add(text,BorderLayout.SOUTH);
+		name=new JTextField(NUMBER_OF_CHARACTERS);
+		panel.add(name,BorderLayout.SOUTH);
 		JLabel label=new JLabel("Enter name here! ");
 		panel.add(label,BorderLayout.CENTER);
 		
@@ -51,7 +52,6 @@ public class TextInput extends JFrame implements ActionListener {
 		
 		add(panelbutton);	
 	}
-
 
 	public void actionPerformed(ActionEvent e) {
 		

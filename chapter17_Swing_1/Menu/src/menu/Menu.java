@@ -25,15 +25,15 @@ public class Menu extends JFrame implements ActionListener {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new GridLayout(1,3));
 		
-		JPanel bluePanel= new JPanel();
+		bluePanel= new JPanel();
 		bluePanel.setBackground(Color.LIGHT_GRAY);
 		add(bluePanel);
 		
-		JPanel whitePanel= new JPanel();
+		whitePanel= new JPanel();
 		whitePanel.setBackground(Color.LIGHT_GRAY);
 		add(whitePanel);
 		
-		JPanel grayPanel= new JPanel();
+		grayPanel= new JPanel();
 		grayPanel.setBackground(Color.LIGHT_GRAY);
 		add(grayPanel);
 		

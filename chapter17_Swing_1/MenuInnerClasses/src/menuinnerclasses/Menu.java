@@ -15,9 +15,9 @@ public class Menu extends JFrame{
 	public static final int width=300;
 	public static final int height=200;
 	
-	private JFrame bluePanel;
-	private JFrame whitePanel;
-	private JFrame grayPanel;
+	private JPanel bluePanel;
+	private JPanel whitePanel;
+	private JPanel grayPanel;
 	
 	public class Blue implements ActionListener{
 		public void actionPerformed(ActionEvent e) {
@@ -44,15 +44,15 @@ public class Menu extends JFrame{
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	setLayout(new GridLayout(1,3));
 	
-	JPanel bluePanel=new JPanel();
+	bluePanel=new JPanel();
 	bluePanel.setBackground(Color.LIGHT_GRAY);
 	add(bluePanel);
 	
-	JPanel whitePanel=new JPanel();
+	whitePanel=new JPanel();
 	whitePanel.setBackground(Color.LIGHT_GRAY);
 	add(whitePanel);
 	
-	JPanel grayPanel= new JPanel();
+	grayPanel= new JPanel();
 	grayPanel.setBackground(Color.LIGHT_GRAY);
 	add(grayPanel);
 	

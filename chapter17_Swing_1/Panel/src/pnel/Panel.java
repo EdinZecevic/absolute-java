@@ -20,7 +20,6 @@ public class Panel extends JFrame implements ActionListener {
 	
 	public Panel() {
 		super("My first panel");
-		setTitle("My first panel");
 		setSize(width,height);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new BorderLayout());
@@ -46,19 +45,17 @@ public class Panel extends JFrame implements ActionListener {
 		buttonPanel.setBackground(Color.LIGHT_GRAY);
 		buttonPanel.setLayout(new FlowLayout());
 		
-		
-		
-		JButton blue=new JButton ();
+		JButton blue=new JButton ("Blue");
 		blue.setBackground(Color.BLUE);
 		blue.addActionListener(this);
 		buttonPanel.add(blue);
 		
-		JButton white=new JButton ();
+		JButton white=new JButton ("White");
 		white.setBackground(Color.WHITE);
 		white.addActionListener(this);
 		buttonPanel.add(white);
 		
-		JButton gray=new JButton ();
+		JButton gray=new JButton ("Gray");
 		gray.setBackground(Color.GRAY);
 		gray.addActionListener(this);
 		buttonPanel.add(gray);
@@ -70,6 +67,7 @@ public class Panel extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		
 		String buttonString=e.getActionCommand();
+		
 		if(buttonString.equals("Blue"))
 			bluePanel.setBackground(Color.BLUE);
 		
