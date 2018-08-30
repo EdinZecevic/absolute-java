@@ -67,7 +67,7 @@ public class TextInputField extends JFrame implements ActionListener {
 		else if(text.equals("Clear"))
 			this.text.setText("");
 		else if(text.equals("Number of lines"))
-			System.out.println("Number of lines is: "+getLineCount());
+			this.text.setText("Number of lines is: "+getLineCount());
 		else 
 			System.out.println("Error");
 		
