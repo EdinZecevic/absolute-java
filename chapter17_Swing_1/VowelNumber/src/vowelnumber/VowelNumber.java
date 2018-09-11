@@ -57,12 +57,13 @@ public class VowelNumber extends JFrame implements ActionListener {
     }
 	
 	public void countVowels(ActionEvent e) {
-		String string = e.getActionCommand( );
-	    int count = 0; 
-	    string = string.toLowerCase();
+		
+		String text = textinput.getText();
+		 int count = 0;
+		
 	
-	    for (int i = 0; i < string.length(); i++) {
-	        char c = string.charAt(i);
+	    for (int i = 0; i < text.length(); i++) {
+	        char c = text.charAt(i);
 	        if (c=='a' || c=='e' || c=='i' || c=='o' || c=='u') {
 	            count++;
 	        }
