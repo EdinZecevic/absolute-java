@@ -5,8 +5,6 @@ import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.PrintWriter;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -97,7 +95,7 @@ public abstract class Controler implements ActionListener {
 									
 									
 									
-									output.println(v);
+									output.println(259);
 									output.flush();
 									
 									try {Thread.sleep(100); } catch(Exception e) {}

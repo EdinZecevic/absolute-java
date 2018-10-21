@@ -10,5 +10,7 @@ public class Test {
 	System.out.println(input.toSting());
 	System.out.println(input1.toSting());
 	System.out.println(input3.toSting());
+	
+	
 }
 }

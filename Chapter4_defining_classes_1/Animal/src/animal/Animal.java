@@ -42,6 +42,20 @@ public class Animal {
 		this.population=population;
 		this.growthRate=growthRate;
 	}
+	
+	public boolean equals(Animal x, Animal y) {
+		if(x.equals(y))
+			return true;
+		else
+			return false;
+	}
+	
+	public boolean endangered(int growthRate) {
+		if(growthRate<0)
+			return true;
+		else 
+			return false;
+	}
 
 	public String toSting() {
 		return(name+", "+population+", "+growthRate);
