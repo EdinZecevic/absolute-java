@@ -15,34 +15,6 @@ public class Employee {
 		salary=0;
 		designation="no designation";
 	}
-	public Employee(String name) {
-		setName( name);
-		id=0;
-		department="no department";
-		salary=0;
-		designation="no designation";
-	}
-	public Employee(String name,int id) {
-		setName( name);
-		setId( id);
-		department="no department";
-		salary=0;
-		designation="no designation";
-	}
-	public Employee(String name,int id,String department) {
-		setName( name);
-		setId( id);
-		setDepartment( department);
-		salary=0;
-		designation="no designation";
-	}
-	public Employee(String name,int id,String department,double salary) {
-		setName( name);
-		setId( id);
-		setDepartment( department);
-		setSalary( salary);
-		designation="no designation";
-	}
 	public Employee(String name,int id,String department,double salary,String designation) {
 		setName( name);
 		setId( id);
@@ -50,6 +22,15 @@ public class Employee {
 		setSalary( salary);
 		setDesignation( designation);
 	}
+	
+	public Employee(Employee employee) {
+		name=employee.name;
+		id=employee.id;
+		department=employee.department;
+		salary=employee.salary;
+		designation=employee.designation;
+	}
+	
 	
 	public void setName(String name) {
 		this.name=name;
@@ -83,30 +64,26 @@ public class Employee {
 		return designation;
 	}
 	
-	public String equals(String string,String string2) {
-		if(string==string2) {
-			return ("They are the same");
+	public boolean equalsDesignation(Employee employee) {
+		if(getDesignation().equals(employee)) {
+			return true;
 		}
 		else
-			return ("They are not the same");
+			return false;
 	}
 	
-	public int addBonus() {
-		return 200;
+	public double addBonus() {
+		return (salary+200);
 	}
 	
 	public String toString() {
 		return (name+" "+name+" "+department+" "+salary+" "+designation);
 	}
-	
-	public double setSalaryFor(String designation,int salary, Employee object) {
-		if(designation=="Menager") {
-			return (salary+object.addBonus());
-		}
-		else if (designation=="Clerk")
-			return (salary+object.addBonus());
-		else 
-			return (salary+addBonus());
+	public boolean equals(Employee employee) {
+		return(name.equals(employee.name) && id==employee.id && department.equals(employee.department) 
+				&& salary==employee.salary && designation.equals(employee.designation));
 	}
+	
+	
 	}
 
