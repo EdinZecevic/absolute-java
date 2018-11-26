@@ -7,6 +7,7 @@ public class Employee {
 	public String department;
 	public double salary;
 	public String designation;
+	public int deduction;
 	
 	public Employee() {
 		name="no name";
@@ -14,13 +15,15 @@ public class Employee {
 		department="no department";
 		salary=0;
 		designation="no designation";
+		deduction=0;
 	}
-	public Employee(String name,int id,String department,double salary,String designation) {
+	public Employee(String name,int id,String department,double salary,String designation,int deduction) {
 		setName( name);
 		setId( id);
 		setDepartment( department);
 		setSalary( salary);
 		setDesignation( designation);
+		setDeduction(deduction);
 	}
 	
 	public Employee(Employee employee) {
@@ -29,8 +32,11 @@ public class Employee {
 		department=employee.department;
 		salary=employee.salary;
 		designation=employee.designation;
+		deduction=employee.deduction;
 	}
-	
+	public void setDeduction(int deduction) {
+		this.deduction=deduction;
+	}
 	
 	public void setName(String name) {
 		this.name=name;
@@ -48,6 +54,9 @@ public class Employee {
 		this.designation=designation;
 	}
 	
+	public int getDeduction() {
+		return deduction;
+	}
 	public String getName() {
 		return name;
 	}
@@ -75,15 +84,17 @@ public class Employee {
 	public double addBonus() {
 		return (salary+200);
 	}
+	public int getBonus() {
+		return 200;
+	}
 	
 	public String toString() {
-		return (name+" "+name+" "+department+" "+salary+" "+designation);
+		return (name+" "+name+" "+department+" "+salary+" "+designation+""+deduction);
 	}
 	public boolean equals(Employee employee) {
 		return(name.equals(employee.name) && id==employee.id && department.equals(employee.department) 
-				&& salary==employee.salary && designation.equals(employee.designation));
+				&& salary==employee.salary && designation.equals(employee.designation) && deduction==employee.deduction);
 	}
 	
 	
 	}
-

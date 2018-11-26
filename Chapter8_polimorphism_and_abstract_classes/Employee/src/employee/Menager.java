@@ -6,8 +6,8 @@ public class Menager extends Employee {
 		super();
 	}
 	
-	public Menager(String name,int id,String department,double salary,String designation) {
-		super(name,id,department,salary,designation);
+	public Menager(String name,int id,String department,double salary,String designation,int deduction) {
+		super(name,id,department,salary,designation,deduction);
 	}
 	
 	public Menager(Menager menager) {
@@ -16,5 +16,8 @@ public class Menager extends Employee {
 
 	public double addBonus() {
 		return (salary+300);
+	}
+	public int getBonus() {
+		return 300;
 	}
 }
