@@ -33,6 +33,46 @@ public class Calculator extends JFrame implements ActionListener {
 		JPanel button =new JPanel();
 		button.setBackground(Color.BLUE);
 		
+		JButton one=new JButton("1");
+		one.addActionListener(this);
+		button.add(one);
+		
+		JButton two=new JButton("2");
+		two.addActionListener(this);
+		button.add(two);
+		
+		JButton three=new JButton("3");
+		three.addActionListener(this);
+		button.add(three);
+		
+		JButton four=new JButton("4");
+		four.addActionListener(this);
+		button.add(four);
+		
+		JButton five=new JButton("5");
+		five.addActionListener(this);
+		button.add(five);
+		
+		JButton six=new JButton("6");
+		six.addActionListener(this);
+		button.add(six);
+		
+		JButton seven=new JButton("7");
+		seven.addActionListener(this);
+		button.add(seven);
+		
+		JButton eight=new JButton("8");
+		eight.addActionListener(this);
+		button.add(eight);
+
+		JButton nine=new JButton("9");
+		nine.addActionListener(this);
+		button.add(nine);
+		
+		JButton zero=new JButton("0");
+		zero.addActionListener(this);
+		button.add(zero);
+		
 		JButton plus=new JButton("+");
 		plus.addActionListener(this);
 		button.add(plus);
@@ -40,6 +80,18 @@ public class Calculator extends JFrame implements ActionListener {
 		JButton minus=new JButton("-");
 		minus.addActionListener(this);
 		button.add(minus);
+		
+		JButton times=new JButton("*");
+		times.addActionListener(this);
+		button.add(times);
+		
+		JButton devide=new JButton("/");
+		devide.addActionListener(this);
+		button.add(devide);
+		
+		JButton equal=new JButton("=");
+		equal.addActionListener(this);
+		button.add(equal);
 		
 		JButton reset =new JButton("Reset");
 		reset.addActionListener(this);
@@ -65,23 +117,9 @@ public class Calculator extends JFrame implements ActionListener {
  
     public void CorrectNumberFormats(ActionEvent e){
         String string = e.getActionCommand( );
- 
-        if (string.equals("+")){
-            resault = resault + stringToDouble(number.getText( ));
-            	number.setText(Double.toString(resault));
+        if(string.equals("1")) {
+        	number.setText("1");
         }
-        else if (string.equals("-")) {
-            resault = resault - stringToDouble(number.getText( ));
-            	number.setText(Double.toString(resault));
- 
-        }
-        else if (string.equals("Reset")){
-            resault = 0.0;
-            
-            	number.setText("0.0");
-        }
-        else
-        	number.setText("Unexpected error.");
      }
  
  
